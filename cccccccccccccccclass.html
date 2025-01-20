@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스</title>
+    <style>
+      body {
+        margin: 20px auto;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li {
+        display: inline-block;
+        margin-left: 20px;
+        padding: 10px 20px 10px;
+      }
+      a {
+        text-decoration: none;
+      }
+      li:hover,
+      li:focus {
+        background-color: black;
+        color: white;
+      }
+      li:active {
+        background-color: red;
+      }
+      #intro:target {
+        background-color: blue;
+        color: #fff;
+      }
+      #room:target {
+        background-color: blueviolet;
+        color: #fff;
+      }
+      #reservation:target {
+        background-color: burlywood;
+        color: #fff;
+      }
+      #intro,
+      #room,
+      #reservation {
+        border: 1px solid black;
+        border-radius: 3px;
+        margin: 10px;
+        width: 400px;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navi">
+      <ul>
+        <li class="box"></li><a href="#intro">이용 안내</a></li>
+        <li class="box"></li><a href="#room">객실 소개</a></li>
+        <a href="#reservation"><li class="box">예약 방법 및 요금</li></a>
+        <a href="class-1.html"><li>예약하기</li></a>
+      </ul>
+    </nav>
+    <div class="container">
+      <div id="intro">
+        <h2>이용 안내</h2>
+        <p>
+          Excepteur do est eiusmod nulla et veniam. Labore officia officia ex
+          aliqua exercitation aliqua laborum Lorem deserunt ut ullamco labore
+          anim. Officia eu duis aliquip incididunt. Do laborum et consequat
+          aliqua sint consectetur.
+        </p>
+      </div>
+      <div id="room">
+        <h2>객실 소개</h2>
+        <p>
+          Qui magna culpa minim reprehenderit magna in nisi ipsum. Ad cillum
+          tempor minim fugiat est dolor. Cillum sit qui minim sint officia
+          nostrud cillum cupidatat pariatur ipsum eiusmod velit labore. Sit in
+          non fugiat minim sit.
+        </p>
+      </div>
+      <div id="reservation">
+        <h2>예약 방법 및 요금</h2>
+        <p>
+          Fugiat aliquip mollit proident velit magna esse ea officia eu. Esse do
+          aliqua proident culpa eiusmod duis minim deserunt eu reprehenderit ut
+          tempor.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

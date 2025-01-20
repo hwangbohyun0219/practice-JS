@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상 클래스-1</title>
+    <style>
+        .container {
+            border:1px solid black;
+            width:460px;
+            border-radius:8px;
+        }
+        fieldset ul {
+            list-style-type: none;
+        }
+        li {
+            width:300px;
+            padding:10px;
+        }
+        .name, .tell {
+            float:left;
+            width:70px;
+        }
+        #signup, #soul {
+            width:400px;
+            padding:30px;
+        }
+        input[type = text] {
+            border-radius:5px;
+            padding:4px;
+        }
+        #soul input:checked + label {
+            font-weight:bold;
+            color:red;
+        }
+        #signup input:not([type=radio]):hover {
+            border-color: red;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <div id="signup">
+        <fieldset>
+            <legend>개인 정보</legend>
+                <ul>
+                    <li>
+                        <label for="fullname" class="name">이름</label>
+                        <input type="text" id="fullname">
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <label for="tell" class="tell">연락처</label>
+                        <input type="text" id="tell">
+                    </li>
+                </ul>
+        </fieldset>
+        </div>
+        <div id="soul">
+        <fieldset>
+            <legend>객실 형태</legend>
+            <ul>
+                <li>
+                    <input type="radio" name="room" id="basic" >
+                    <label for="basic">기본형(최대 2인)</label>
+                </li>
+                <li>
+                    <input type="radio" name="room" id="family">
+                    <label for="family">가족형(최대 8인)</label>
+                </li>
+            </ul>
+        </fieldset>
+        </div>
+    </div>
+  </body>
+  </body>
+</html>

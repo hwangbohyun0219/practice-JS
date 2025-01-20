@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position</title>
+    <style>
+      .container {
+        width: 400px;
+        height: 200px;
+        background-color: lightgray;
+        position: relative; /* 절대 위치의 기준이 될 수 있도록 설정 */
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: aqua;
+        position: relative; /* 문서 흐름 안에서 상대적 위치로 이동 */
+        top: 20px; /* 20px 아래로 이동 */
+      }
+
+      .caption {
+        width: 200px;
+        height: 50px;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        position: absolute; /* 절대 위치로 설정 */
+        top: 50px; /* 50px 아래 */
+        left: 150px; /* 150px 오른쪽 */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">Box</div>
+      <div class="caption">Caption</div>
+    </div>
+  </body>
+</html>
