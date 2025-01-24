@@ -32,7 +32,7 @@ main button.download {
   margin-top: 3rem;
   color: white;
   font-weight: bold;
-  cursor: point;
+  cursor: pointer;
 }
 main button.mouse {
   background-color: transparent;
