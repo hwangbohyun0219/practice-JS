@@ -2,9 +2,9 @@ section .about-self .left {
   float: left;
   width: 50%;
 }
-section .about-self .left img {
+/* section .about-self .left img {
   width: 100%;
-}
+} */
 section .about-self .right {
   width: 50%;
   float: left;
