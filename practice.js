@@ -1,11 +1,14 @@
-const person = {
-  name: "alice",
-  age: 26,
-  city: "Jeju",
+const myLib = {
+  config: {
+    theme: "dark",
+    lang: "ko",
+  },
 };
 
-const entries = Object.entries(person);
+// myLib.config.theme = "light"; // 기존 값이 덮어씌어짐
 
-for (const [key, value] of entries) {
-  console.log([key, value]);
-}
+const uniqueKey = Symbol("theme");
+myLib.config[uniqueKey] = "custom-theme";
+
+console.log(myLib.config.theme); // dark
+console.log(myLib.config[uniqueKey]); // custom-theme
