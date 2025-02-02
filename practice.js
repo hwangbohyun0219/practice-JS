@@ -49,4 +49,3 @@ const user2 = new User("Jane", "25", "React");
 const user3 = new User("Tom", "10", "English");
 console.log(user1);
 console.log(user2);
-console.log(user3);
