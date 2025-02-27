@@ -323,6 +323,36 @@ section .contact-me .right button {
   section .container {
     width: 600px;
   }
+  section .about-self .left {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  section .about-self .right {
+    width: 100%;
+    padding: 0;
+  }
+  section .do-me .do-inner {
+    width: 48%;
+    margin-bottom: 1.5rem;
+    margin-right: 0;
+  }
+  section .do-me .do-inner:nth-child(2n + 1) {
+    margin-right: 4%;
+  }
+  section portfolio-me .portfolio-inner {
+    width: 48%;
+    margin-right: 0;
+  }
+  section .portfolio-me .portfolio-inner:nth-child(2n + 1) {
+    margin-right: 4%;
+  }
+  section .contact-me .left {
+    width: 100%;
+  }
+  section .contact-me .right {
+    width: 100%;
+    margin-left: 0;
+  }
 }
 @media screen and (max-width: 992px) {
   html {
@@ -330,6 +360,9 @@ section .contact-me .right button {
   }
   main .container {
     width: 768px;
+  }
+  section .portfolio-me .portfolio-inner {
+    width: 100%;
   }
 }
 @media screen and (max-width: 768px) {
@@ -341,6 +374,10 @@ section .contact-me .right button {
   }
   section .container {
     width: 400px;
+  }
+  section .do-me .do-inner {
+    width: 100%;
+    margin-right: 0;
   }
 }
 @media screen and (max-width: 576px) {
@@ -363,5 +400,11 @@ section .contact-me .right button {
   }
   section .container {
     width: 320px;
+  }
+  main h4 {
+    font-size: 1.5rem;
+  }
+  section .title h2 {
+    font-size: 3rem;
   }
 }
