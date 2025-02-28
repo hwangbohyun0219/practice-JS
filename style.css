@@ -73,8 +73,9 @@ section .about-self .right .social a {
 }
 /* header */
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
+  z-index: 1;
   color: black;
   width: 100%;
   padding: 1rem;
@@ -104,6 +105,21 @@ header nav ul li {
 header nav ul li button {
   font-size: 1.2rem;
 }
+
+header.active {
+  background-color: #000;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* main */
 main {
   width: 100%;
